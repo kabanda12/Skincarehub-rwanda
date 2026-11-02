@@ -1,0 +1,37 @@
+# =============================================================================
+#  Skincare Hub Rwanda — SEO-friendly URLs (Netlify / Cloudflare Pages)
+#
+#  The site is a plain static build with no server, so every page is also a
+#  real file: shop.html, quiz.html and the rest keep working, including when the
+#  project is opened straight from disk with file://. These rules simply give
+#  the same pages the shorter addresses the brief asks for:
+#
+#     /shop          /skin-quiz      /about        /contact
+#     /cart          /checkout       /product/<name>
+#
+#  Netlify reads this file automatically from the publish directory. Remove it
+#  if you host somewhere that does not, and the .html links in the site carry on
+#  working exactly as they do now.
+#
+#  A 200 rewrite keeps the address in the bar and serves the page; nothing is
+#  redirected, so no link equity is lost.
+# =============================================================================
+
+/shop            /shop.html            200
+/product         /shop.html            200
+/skin-quiz       /quiz.html            200
+/quiz            /quiz.html            200
+/skin-quiz/      /quiz.html            200
+/about           /about.html           200
+/contact         /contact.html         200
+/cart            /cart.html            200
+/checkout        /checkout.html        200
+/reviews         /reviews.html         200
+/blog            /blog.html            200
+/faq             /faq.html             200
+/consultation    /consultation.html    200
+/policies        /policies.html        200
+
+# /product/cerave-hydrating-facial-cleanser → product.html?id=…
+# (the page is built in the browser from the id, so the slug is the id)
+/product/:id     /product.html?id=:id  200

@@ -1,0 +1,19 @@
+# Robots.txt — Skincare Hub Rwanda
+#
+# IMPORTANT: replace https://www.skincarehub.rw with your real domain before
+# launch, here and in sitemap.xml, and make the canonical links in each page
+# absolute (see README.md → "Before you go live").
+
+User-agent: *
+Allow: /
+
+# Personal / transactional pages
+Disallow: /cart.html
+Disallow: /checkout.html
+Disallow: /account.html
+Disallow: /wishlist.html
+
+# Allow crawlers to reach the styles and scripts they need to render pages
+Allow: /assets/
+
+Sitemap: https://www.skincarehub.rw/sitemap.xml

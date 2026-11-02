@@ -1,0 +1,47 @@
+{
+  "name": "Skincare Hub Rwanda",
+  "short_name": "Skincare Hub",
+  "description": "100% authentic skincare from trusted global brands, with free personalized routines and delivery across all 30 districts of Rwanda.",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#0a1e3c",
+  "lang": "en",
+  "categories": ["shopping", "health", "beauty"],
+  "icons": [
+    {
+      "src": "assets/img/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Skin Quiz",
+      "short_name": "Quiz",
+      "description": "Answer six questions and get a routine built for your skin",
+      "url": "quiz.html"
+    },
+    {
+      "name": "Best sellers",
+      "short_name": "Best sellers",
+      "description": "What Rwanda reorders most",
+      "url": "shop.html?category=best-sellers"
+    },
+    {
+      "name": "Chat on WhatsApp",
+      "short_name": "WhatsApp",
+      "description": "Talk to a skincare advisor",
+      "url": "contact.html"
+    }
+  ]
+}
